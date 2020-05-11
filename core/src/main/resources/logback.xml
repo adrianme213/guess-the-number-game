@@ -6,6 +6,9 @@
     </appender>
 
     <logger name="udemy.javaspringmasterclass" level="DEBUG"/>
+    <logger name="org.springframework" level="DEBUG"/>
+
+
     <root level="INFO">
         <appender-ref ref="STDOUT"/>
     </root>
