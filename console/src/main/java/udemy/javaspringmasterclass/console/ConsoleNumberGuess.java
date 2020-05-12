@@ -18,11 +18,16 @@ public class ConsoleNumberGuess {
     private static final Logger log = LoggerFactory.getLogger(ConsoleNumberGuess.class);
 
     // ----- FIELDS -----
-    @Autowired
-    private Game game;
+    private final Game game;
 
+    private final MessageGenerator messageGenerator;
+
+    // ----- CONSTRUCTORS -----
     @Autowired
-    private MessageGenerator messageGenerator;
+    public ConsoleNumberGuess(Game game, MessageGenerator messageGenerator) {
+        this.game = game;
+        this.messageGenerator = messageGenerator;
+    }
 
     // ----- EVENTS -----
     @EventListener(ContextRefreshedEvent.class)
