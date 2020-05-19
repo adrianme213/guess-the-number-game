@@ -40,7 +40,7 @@ public class GameImpl implements Game {
         smallest = numberGenerator.getMinNumber();
         guess = numberGenerator.getMinNumber();
         remainingGuesses = guessCount;
-        biggest = numberGenerator.getMaxNumber();
+        biggest = numberGenerator.getMaxNumber ();
         number = numberGenerator.next();
         log.debug("The number is {}", number);
     }
